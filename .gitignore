@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Playwright MCP
+.playwright-mcp/
+
+# Screenshots (operational artifacts)
+*.png
+*.jpg
+*.jpeg
+
+# Claude local settings (personal)
+.claude/settings.local.json
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
