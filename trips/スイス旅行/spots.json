@@ -1,0 +1,77 @@
+{
+  "destination": "Zermatt, Switzerland",
+  "list_name": "スイス旅行",
+  "season": "2月中旬・カップル・定番観光＋食べ歩き・2泊以下",
+  "spots": [
+    {
+      "name_ja": "ゴルナーグラート",
+      "name_en": "Gornergrat",
+      "category": "展望台",
+      "note": "登山鉄道で約33分。冬の往復 CHF 102。朝いちばんの快晴を狙う",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Gornergrat+Zermatt%2C+Switzerland"
+    },
+    {
+      "name_ja": "マッターホルン・グレッシャー・パラダイス",
+      "name_en": "Matterhorn Glacier Paradise",
+      "category": "展望台",
+      "note": "ヨーロッパ最高所のロープウェイ駅（3,883m）。冬は防寒と高山病に注意。グレッシャー・パレスの休館日を事前に確認",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Matterhorn+Glacier+Paradise+Zermatt%2C+Switzerland"
+    },
+    {
+      "name_ja": "リッフェルゼー",
+      "name_en": "Riffelsee",
+      "category": "自然・雪景色",
+      "note": "2月は湖が凍って雪に覆われ、逆さマッターホルンは見られない。ローテンボーデン駅から冬のハイキング道を歩く",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Riffelsee+Zermatt%2C+Switzerland"
+    },
+    {
+      "name_ja": "スネガ / ライゼー",
+      "name_en": "Sunnegga Paradise",
+      "category": "展望台",
+      "note": "地下ケーブルカーで約5分。ここからシェ・ヴロニーへ向かえる",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Sunnegga+Paradise+Zermatt%2C+Switzerland"
+    },
+    {
+      "name_ja": "キルヒ橋",
+      "name_en": "Kirchbrücke Zermatt",
+      "category": "写真スポット",
+      "note": "村の中からマッターホルンが見える。朝焼けで山頂が赤く染まる時間がおすすめ",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Kirchbr%C3%BCcke+Zermatt+Switzerland"
+    },
+    {
+      "name_ja": "ヒンタードルフ旧市街",
+      "name_en": "Hinterdorf Zermatt",
+      "category": "街歩き",
+      "note": "雪をかぶった古い木造倉庫が並ぶ路地。夜の散歩も雰囲気がいい",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Hinterdorf+Zermatt+Switzerland"
+    },
+    {
+      "name_ja": "マッターホルン博物館",
+      "name_en": "Matterhorn Museum Zermatlantis",
+      "category": "博物館",
+      "note": "初登頂の歴史がわかる。山が雲に隠れた日の予定に",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Matterhorn+Museum+Zermatlantis+Zermatt%2C+Switzerland"
+    },
+    {
+      "name_ja": "シェ・ヴロニー",
+      "name_en": "Chez Vrony",
+      "category": "食事",
+      "note": "標高約2,100mの山小屋レストラン。マッターホルンを見ながらランチ。冬は営業日を確認し、要予約",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Chez+Vrony+Zermatt%2C+Switzerland"
+    },
+    {
+      "name_ja": "ウィンパー・シュトゥーベ",
+      "name_en": "Whymper-Stube",
+      "category": "食事（フォンデュ）",
+      "note": "村の中心にある老舗。チーズフォンデュとラクレットのディナーに。要予約",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Whymper-Stube+Zermatt%2C+Switzerland"
+    },
+    {
+      "name_ja": "バーンホフ通り",
+      "name_en": "Bahnhofstrasse Zermatt",
+      "category": "食べ歩き・買い物",
+      "note": "チョコレートやお土産、カフェを回れるメインストリート",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Bahnhofstrasse+Zermatt+Switzerland"
+    }
+  ]
+}

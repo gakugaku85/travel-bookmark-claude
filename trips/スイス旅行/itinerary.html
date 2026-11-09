@@ -1,0 +1,162 @@
+<title>ツェルマット冬の2日間</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: 山岳ガイドの手帳。日ごとの行程を時刻順に並べ、各スポットに標高メーターを付ける */
+:root {
+  --bg: #f3f6f8;        /* 雪面 */
+  --surface: #ffffff;
+  --ink: #18242e;       /* 岩肌のスレート */
+  --muted: #5b6b78;
+  --line: #d6dee5;
+  --glow: #c2415b;      /* 朝焼けのマッターホルン */
+  --ice: #2f6f8f;       /* 氷河 */
+  --track: #e3e9ee;
+  --f-display: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --f-body: "Zen Kaku Gothic New", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f171e; --surface: #16212a; --ink: #e6edf2; --muted: #9aabb8; --line: #2a3843;
+    --glow: #ef7a90; --ice: #7cc0e0; --track: #23313c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f171e; --surface: #16212a; --ink: #e6edf2; --muted: #9aabb8; --line: #2a3843;
+  --glow: #ef7a90; --ice: #7cc0e0; --track: #23313c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.7;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 56px;
+}
+.wrap { max-width: 720px; margin: 0 auto; display: grid; gap: 40px; }
+header { display: grid; gap: 10px; }
+.eyebrow { font-family: var(--f-data); font-size: 12px; letter-spacing: .08em; color: var(--ice); text-transform: uppercase; }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(30px, 7vw, 44px); line-height: 1.2; margin: 0; text-wrap: balance; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
+.meta li { font-size: 13px; padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.lead { margin: 0; color: var(--muted); max-width: 60ch; }
+
+section.day { display: grid; gap: 14px; }
+.day h2 { font-family: var(--f-display); font-weight: 600; font-size: 22px; margin: 0; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.day h2 small { font-family: var(--f-body); font-size: 13px; color: var(--muted); font-weight: 500; }
+ol.stops { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-left: 2px solid var(--line); margin-left: 6px; }
+.stop { position: relative; padding: 4px 0 22px 22px; display: grid; gap: 6px; min-width: 0; }
+.stop::before { content: ""; position: absolute; left: -7px; top: 12px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--ice); }
+.stop.meal::before { border-color: var(--glow); background: var(--glow); }
+.row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.time { font-family: var(--f-data); font-size: 13px; color: var(--ice); font-variant-numeric: tabular-nums; }
+.stop h3 { margin: 0; font-size: 17px; font-weight: 700; }
+.en { font-size: 12px; color: var(--muted); }
+.cat { font-size: 12px; color: var(--muted); }
+.note { margin: 0; max-width: 60ch; }
+.alt { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; max-width: 360px; }
+.alt .bar { height: 4px; background: var(--track); border-radius: 2px; position: relative; overflow: hidden; }
+.alt .bar i { position: absolute; inset: 0 auto 0 0; background: var(--ice); border-radius: 2px; }
+.alt span { font-family: var(--f-data); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 6ch; text-align: right; }
+a.map { justify-self: start; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: var(--ice); text-decoration: none; border: 1px solid var(--line); background: var(--surface); padding: 4px 12px; border-radius: 6px; }
+a.map:hover, a.map:focus-visible { border-color: var(--ice); outline: none; }
+a.map:focus-visible { box-shadow: 0 0 0 2px var(--ice); }
+
+.notes { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; display: grid; gap: 10px; }
+.notes h2, .howto h2 { font-family: var(--f-display); font-weight: 600; font-size: 19px; margin: 0; }
+.notes ul, .howto ol { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.notes b { color: var(--glow); font-weight: 700; }
+.howto { display: grid; gap: 10px; }
+.howto code { font-family: var(--f-data); font-size: 13px; }
+footer { font-size: 12px; color: var(--muted); }
+footer a { color: inherit; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Zermatt · 1,608 m · Feb</div>
+    <h1>ツェルマット冬の2日間</h1>
+    <p class="lead">マッターホルンのふもとで、2つの展望台・雪の村歩き・フォンデュを回る詰め込みプラン。各スポットの「地図」ボタンを押すと Google マップが開きます。</p>
+    <ul class="meta">
+      <li>2月中旬</li><li>カップル</li><li>定番観光＋食べ歩き</li><li>2泊以下</li><li>10スポット</li>
+    </ul>
+  </header>
+
+  <div id="days"></div>
+
+  <aside class="notes">
+    <h2>出発前に確認すること</h2>
+    <ul>
+      <li><b>天気で順番を入れ替える。</b>展望台はマッターホルンが見える晴れの日に。曇りの日は博物館と村歩きを先にする</li>
+      <li>ゴルナーグラート鉄道の冬季往復は CHF 102。天候で運休することがあります</li>
+      <li>グレッシャー・パラダイスは3,883m。防寒具を持ち、急に動き回らないこと。グレッシャー・パレスなど施設ごとの休館日は公式サイトで確認</li>
+      <li>リッフェルゼーは2月は凍結・積雪。逆さマッターホルンは見られませんが、ローテンボーデンからの冬のハイキング道で雪原を歩けます</li>
+      <li>シェ・ヴロニーとウィンパー・シュトゥーベは予約がおすすめ。シェ・ヴロニーは冬の営業日と、スキーをしない人の行き方を予約時に確認</li>
+    </ul>
+  </aside>
+
+  <section class="howto">
+    <h2>Google マップに保存する</h2>
+    <ol>
+      <li><a href="https://www.google.com/mymaps" target="_blank" rel="noopener">Google マイマップ</a>で「新しい地図を作成」</li>
+      <li>レイヤの「インポート」で <code>trips/スイス旅行/spots.csv</code> をアップロード</li>
+      <li>位置の列に <code>Address</code>、タイトルの列に <code>Name</code> を選ぶ</li>
+      <li>Google マップアプリの「保存済み → マップ」に表示されます</li>
+    </ol>
+  </section>
+
+  <footer>標高は概算です。運行情報は <a href="https://www.gornergrat.ch/en/pages/timetable-prices" target="_blank" rel="noopener">gornergrat.ch</a>・<a href="https://www.matterhornparadise.ch/en/information/lifts-and-pistes" target="_blank" rel="noopener">matterhornparadise.ch</a> で最新を確認してください。</footer>
+</div>
+
+<script>
+const MAX_ALT = 4000;
+const q = s => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(s);
+const days = [
+  { title: "1日目", sub: "鉄道で展望台、午後は村歩き", stops: [
+    { t: "08:00", ja: "ゴルナーグラート", en: "Gornergrat", cat: "展望台", alt: 3089, map: q("Gornergrat Zermatt Switzerland"),
+      note: "朝いちばんの登山鉄道で約33分。マッターホルンと29の4,000m峰、ゴルナー氷河を一望。" },
+    { t: "10:30", ja: "リッフェルゼー", en: "Riffelsee", cat: "雪景色・ハイキング", alt: 2757, map: q("Riffelsee Zermatt Switzerland"),
+      note: "ローテンボーデン駅で下車して雪の湖畔へ。帰りは鉄道で村へ戻る。" },
+    { t: "13:30", ja: "マッターホルン博物館", en: "Matterhorn Museum Zermatlantis", cat: "博物館", alt: 1608, map: q("Matterhorn Museum Zermatlantis Zermatt Switzerland"),
+      note: "1865年の初登頂とその悲劇を、地下に再現された村で知る。" },
+    { t: "15:00", ja: "ヒンタードルフ旧市街", en: "Hinterdorf", cat: "街歩き", alt: 1610, map: q("Hinterdorf Zermatt Switzerland"),
+      note: "ネズミ返しの石板が付いた、古い木造の高床倉庫が並ぶ路地。" },
+    { t: "16:30", ja: "バーンホフ通り", en: "Bahnhofstrasse", cat: "食べ歩き・買い物", alt: 1605, map: q("Bahnhofstrasse Zermatt Switzerland"),
+      note: "チョコレートとお土産、カフェでひと休み。" },
+    { t: "19:00", ja: "ウィンパー・シュトゥーベ", en: "Whymper-Stube", cat: "夕食・フォンデュ", alt: 1605, meal: true, map: q("Whymper-Stube Zermatt Switzerland"),
+      note: "村の中心にある老舗。地元のチーズで作るフォンデュとラクレットにワインを合わせて。" }
+  ]},
+  { title: "2日目", sub: "朝焼けからヨーロッパ最高所の展望台へ", stops: [
+    { t: "07:30", ja: "キルヒ橋", en: "Kirchbrücke", cat: "写真スポット", alt: 1605, map: q("Kirchbrücke Zermatt Switzerland"),
+      note: "日の出の時間、マッターホルンの山頂だけが赤く染まる瞬間を撮る。" },
+    { t: "09:00", ja: "マッターホルン・グレッシャー・パラダイス", en: "Matterhorn Glacier Paradise", cat: "展望台", alt: 3883, map: q("Matterhorn Glacier Paradise Zermatt Switzerland"),
+      note: "3つのロープウェイを乗り継いで3,883mへ。氷河の洞窟（グレッシャー・パレス）も。" },
+    { t: "12:00", ja: "スネガ / ライゼー", en: "Sunnegga Paradise", cat: "展望台", alt: 2288, map: q("Sunnegga Paradise Zermatt Switzerland"),
+      note: "村へ戻り、地下ケーブルカーで約5分。ここからランチへ向かう。" },
+    { t: "12:45", ja: "シェ・ヴロニー", en: "Chez Vrony", cat: "昼食", alt: 2130, meal: true, map: q("Chez Vrony Zermatt Switzerland"),
+      note: "フィンデルン集落にある山小屋レストラン。テラスからマッターホルンを正面に見ながらランチ。" }
+  ]}
+];
+const root = document.getElementById("days");
+root.style.display = "grid"; root.style.gap = "36px";
+for (const d of days) {
+  const sec = document.createElement("section");
+  sec.className = "day";
+  sec.innerHTML = `<h2>${d.title}<small>${d.sub}</small></h2>`;
+  const ol = document.createElement("ol");
+  ol.className = "stops";
+  for (const s of d.stops) {
+    const li = document.createElement("li");
+    li.className = "stop" + (s.meal ? " meal" : "");
+    li.innerHTML = `
+      <div class="row1"><span class="time">${s.t}</span><h3>${s.ja}</h3><span class="en">${s.en}</span></div>
+      <div class="cat">${s.cat}</div>
+      <p class="note">${s.note}</p>
+      <div class="alt" aria-label="標高 ${s.alt.toLocaleString()} m"><div class="bar"><i style="width:${(s.alt / MAX_ALT * 100).toFixed(1)}%"></i></div><span>${s.alt.toLocaleString()} m</span></div>
+      <a class="map" href="${s.map}" target="_blank" rel="noopener">地図で開く ↗</a>`;
+    ol.appendChild(li);
+  }
+  sec.appendChild(ol);
+  root.appendChild(sec);
+}
+</script>

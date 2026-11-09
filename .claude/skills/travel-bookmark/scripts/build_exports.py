@@ -56,11 +56,20 @@ def slugify(text: str) -> str:
     return slug or "trip"
 
 
+def with_destination(name: str, destination: str, sep: str = " ") -> str:
+    """Append the destination unless the name already contains its first part (e.g. "Zermatt")."""
+    head = destination.split(",")[0].strip()
+    if head and head.lower() in name.lower():
+        rest = destination[len(head):].lstrip(", ").strip()
+        return f"{name}{sep}{rest}" if rest else name
+    return f"{name}{sep}{destination}"
+
+
 def maps_url(spot: dict, destination: str) -> str:
     """Universal Google Maps URL (works on web, iOS, Android)."""
     if spot.get("maps_url"):
         return spot["maps_url"]
-    query = spot.get("address") or f"{spot.get('name_en') or spot.get('name_ja')} {destination}"
+    query = spot.get("address") or with_destination(spot.get("name_en") or spot.get("name_ja"), destination)
     params = {"api": "1", "query": query}
     if spot.get("place_id"):
         params["query_place_id"] = spot["place_id"]
@@ -68,7 +77,7 @@ def maps_url(spot: dict, destination: str) -> str:
 
 
 def resolve_spot(spot: dict, destination: str, api_key: str) -> None:
-    query = f"{spot.get('name_en') or spot.get('name_ja')} {destination}"
+    query = with_destination(spot.get("name_en") or spot.get("name_ja"), destination)
     body = json.dumps({"textQuery": query, "languageCode": "ja", "pageSize": 1}).encode()
     req = urllib.request.Request(
         PLACES_URL,
@@ -100,7 +109,7 @@ def write_csv(path: Path, spots: list[dict], destination: str) -> None:
         w = csv.writer(f)
         w.writerow(["Name", "Name (EN)", "Category", "Note", "Address", "Latitude", "Longitude", "Google Maps"])
         for s in spots:
-            address = s.get("address") or f"{s.get('name_en') or s.get('name_ja')}, {destination}"
+            address = s.get("address") or with_destination(s.get("name_en") or s.get("name_ja"), destination, ", ")
             w.writerow([
                 s.get("name_ja") or s.get("name_en"),
                 s.get("name_en", ""),
