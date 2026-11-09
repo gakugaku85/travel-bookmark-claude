@@ -28,7 +28,7 @@
 ## Google マップに取り込む
 
 1. [Google マイマップ](https://www.google.com/mymaps) で「新しい地図を作成」
-2. レイヤの「インポート」から `spots.csv` をアップロード
+2. レイヤの「インポート」から `spots.csv` または `spots.kml` をアップロード
 3. 位置の列に `Address`（座標があれば `Latitude` / `Longitude`）、タイトルの列に `Name` を選択
 
 作成したマイマップは Google マップアプリの「保存済み」→「マップ」から見られます。

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>スイス旅行</name>
+    <Placemark>
+      <name>ゴルナーグラート</name>
+      <description>Gornergrat / 展望台 / 登山鉄道で約33分。冬の往復 CHF 102。朝いちばんの快晴を狙う / https://www.google.com/maps/search/?api=1&amp;query=Gornergrat+Zermatt%2C+Switzerland</description>
+      <Point><coordinates>7.7847,45.9833,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>マッターホルン・グレッシャー・パラダイス</name>
+      <description>Matterhorn Glacier Paradise / 展望台 / ヨーロッパ最高所のロープウェイ駅（3,883m）。冬は防寒と高山病に注意。グレッシャー・パレスの休館日を事前に確認 / https://www.google.com/maps/search/?api=1&amp;query=Matterhorn+Glacier+Paradise+Zermatt%2C+Switzerland</description>
+      <Point><coordinates>7.7297,45.9383,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>リッフェルゼー</name>
+      <description>Riffelsee / 自然・雪景色 / 2月は湖が凍って雪に覆われ、逆さマッターホルンは見られない。ローテンボーデン駅から冬のハイキング道を歩く / https://www.google.com/maps/search/?api=1&amp;query=Riffelsee+Zermatt%2C+Switzerland</description>
+      <Point><coordinates>7.7549,45.9878,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>スネガ / ライゼー</name>
+      <description>Sunnegga Paradise / 展望台 / 地下ケーブルカーで約5分。ここからシェ・ヴロニーへ向かえる / https://www.google.com/maps/search/?api=1&amp;query=Sunnegga+Paradise+Zermatt%2C+Switzerland</description>
+      <Point><coordinates>7.771,46.009,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>キルヒ橋</name>
+      <description>Kirchbrücke Zermatt / 写真スポット / 村の中からマッターホルンが見える。朝焼けで山頂が赤く染まる時間がおすすめ / https://www.google.com/maps/search/?api=1&amp;query=Kirchbr%C3%BCcke+Zermatt+Switzerland</description>
+      <Point><coordinates>7.7477,46.0196,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>ヒンタードルフ旧市街</name>
+      <description>Hinterdorf Zermatt / 街歩き / 雪をかぶった古い木造倉庫が並ぶ路地。夜の散歩も雰囲気がいい / https://www.google.com/maps/search/?api=1&amp;query=Hinterdorf+Zermatt+Switzerland</description>
+      <Point><coordinates>7.7482,46.0225,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>マッターホルン博物館</name>
+      <description>Matterhorn Museum Zermatlantis / 博物館 / 初登頂の歴史がわかる。山が雲に隠れた日の予定に / https://www.google.com/maps/search/?api=1&amp;query=Matterhorn+Museum+Zermatlantis+Zermatt%2C+Switzerland</description>
+      <Point><coordinates>7.7488,46.0201,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>シェ・ヴロニー</name>
+      <description>Chez Vrony / 食事 / 標高約2,100mの山小屋レストラン。マッターホルンを見ながらランチ。冬は営業日を確認し、要予約 / https://www.google.com/maps/search/?api=1&amp;query=Chez+Vrony+Zermatt%2C+Switzerland</description>
+      <Point><coordinates>7.78,46.009,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>ウィンパー・シュトゥーベ</name>
+      <description>Whymper-Stube / 食事（フォンデュ） / 村の中心にある老舗。チーズフォンデュとラクレットのディナーに。要予約 / https://www.google.com/maps/search/?api=1&amp;query=Whymper-Stube+Zermatt%2C+Switzerland</description>
+      <Point><coordinates>7.7478,46.0213,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>バーンホフ通り</name>
+      <description>Bahnhofstrasse Zermatt / 食べ歩き・買い物 / チョコレートやお土産、カフェを回れるメインストリート / https://www.google.com/maps/search/?api=1&amp;query=Bahnhofstrasse+Zermatt+Switzerland</description>
+      <Point><coordinates>7.7477,46.023,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>ニーダードルフ旧市街</name>
+      <description>Niederdorf / 街歩き / 石畳の路地に小さな店と酒場が並ぶ。夜の散歩にも / https://www.google.com/maps/search/?api=1&amp;query=Niederdorf+Z%C3%BCrich%2C+Switzerland</description>
+      <Point><coordinates>8.544,47.3737,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>グロスミュンスター</name>
+      <description>Grossmünster / 教会・展望 / カール塔（187段）から街と湖を一望。2025〜2029年は改修中で立ち入れない場所あり / https://www.google.com/maps/search/?api=1&amp;query=Grossm%C3%BCnster+Z%C3%BCrich%2C+Switzerland</description>
+      <Point><coordinates>8.544,47.37,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>フラウミュンスター</name>
+      <description>Fraumünster / 教会・アート / シャガールの5枚のステンドグラス。入場は有料の場合あり / https://www.google.com/maps/search/?api=1&amp;query=Fraum%C3%BCnster+Z%C3%BCrich%2C+Switzerland</description>
+      <Point><coordinates>8.5413,47.3697,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>リンデンホフ</name>
+      <description>Lindenhof / 展望・無料 / 旧市街の高台の公園。リマト川と旧市街の屋根を一望 / https://www.google.com/maps/search/?api=1&amp;query=Lindenhof+Z%C3%BCrich%2C+Switzerland</description>
+      <Point><coordinates>8.5409,47.3729,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>バーンホフ通り</name>
+      <description>Bahnhofstrasse Zürich / 買い物 / 中央駅からパラデプラッツまで歩けるショッピング通り / https://www.google.com/maps/search/?api=1&amp;query=Bahnhofstrasse+Z%C3%BCrich+Switzerland</description>
+      <Point><coordinates>8.5393,47.3725,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>シュプリュングリ本店</name>
+      <description>Confiserie Sprüngli Paradeplatz / 食べ歩き・スイーツ / 名物の一口焼き菓子ルクセンブルゲルリ。お土産にも / https://www.google.com/maps/search/?api=1&amp;query=Confiserie+Spr%C3%BCngli+Paradeplatz+Z%C3%BCrich%2C+Switzerland</description>
+      <Point><coordinates>8.5391,47.3697,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>リンツ・ホーム・オブ・チョコレート</name>
+      <description>Lindt Home of Chocolate / 体験・スイーツ / 毎日10〜19時。博物館ツアーは時間指定なので予約がおすすめ。噴水とショップは無料 / https://www.google.com/maps/search/?api=1&amp;query=Lindt+Home+of+Chocolate+Kilchberg%2C+Switzerland</description>
+      <Point><coordinates>8.5513,47.3192,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>チューリッヒ美術館</name>
+      <description>Kunsthaus Zürich / 美術館 / 木曜は20時まで。月曜は休館の可能性があるので要確認 / https://www.google.com/maps/search/?api=1&amp;query=Kunsthaus+Z%C3%BCrich+Switzerland</description>
+      <Point><coordinates>8.5481,47.3703,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>ツォイクハウスケラー</name>
+      <description>Zeughauskeller / 夕食 / 昔の武器庫を使ったスイス郷土料理の店。予約なしで入れる / https://www.google.com/maps/search/?api=1&amp;query=Zeughauskeller+Z%C3%BCrich%2C+Switzerland</description>
+      <Point><coordinates>8.5397,47.3708,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>ユートリベルク</name>
+      <description>Uetliberg / 展望 / 中央駅から電車で約20分、標高869m。晴れればアルプスまで見える / https://www.google.com/maps/search/?api=1&amp;query=Uetliberg+Z%C3%BCrich%2C+Switzerland</description>
+      <Point><coordinates>8.4919,47.3497,0</coordinates></Point>
+    </Placemark>
+  </Document>
+</kml>
