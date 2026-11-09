@@ -3,7 +3,7 @@
 .AppleDouble
 .LSOverride
 
-# Playwright MCP
+# Playwright MCP (legacy)
 .playwright-mcp/
 
 # Screenshots (operational artifacts)

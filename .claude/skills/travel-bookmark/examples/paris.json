@@ -1,0 +1,9 @@
+{
+  "destination": "パリ",
+  "list_name": "フランス旅行",
+  "spots": [
+    {"name_ja": "エッフェル塔", "name_en": "Eiffel Tower", "category": "展望台", "note": "夜のシャンパンフラッシュは毎正時"},
+    {"name_ja": "ルーブル美術館", "name_en": "Louvre Museum", "category": "美術館", "note": "事前予約必須。半日は確保"},
+    {"name_ja": "マレ地区", "name_en": "Le Marais", "category": "散策・ショッピング", "note": "雑貨と古着、ファラフェルの食べ歩き"}
+  ]
+}
