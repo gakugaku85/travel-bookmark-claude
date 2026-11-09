@@ -1,17 +1,147 @@
 {
-  "destination": "Zermatt, Switzerland",
+  "destination": "スイス（ツェルマット・チューリッヒ）",
   "list_name": "スイス旅行",
-  "season": "2月中旬・カップル・定番観光＋食べ歩き・2泊以下",
+  "season": "2月中旬・カップル・定番観光＋食べ歩き・ツェルマット2泊→チューリッヒ1泊",
   "spots": [
-    {"name_ja": "ゴルナーグラート", "name_en": "Gornergrat", "category": "展望台", "note": "登山鉄道で約33分。冬の往復 CHF 102。朝いちばんの快晴を狙う"},
-    {"name_ja": "マッターホルン・グレッシャー・パラダイス", "name_en": "Matterhorn Glacier Paradise", "category": "展望台", "note": "ヨーロッパ最高所のロープウェイ駅（3,883m）。冬は防寒と高山病に注意。グレッシャー・パレスの休館日を事前に確認"},
-    {"name_ja": "リッフェルゼー", "name_en": "Riffelsee", "category": "自然・雪景色", "note": "2月は湖が凍って雪に覆われ、逆さマッターホルンは見られない。ローテンボーデン駅から冬のハイキング道を歩く"},
-    {"name_ja": "スネガ / ライゼー", "name_en": "Sunnegga Paradise", "category": "展望台", "note": "地下ケーブルカーで約5分。ここからシェ・ヴロニーへ向かえる"},
-    {"name_ja": "キルヒ橋", "name_en": "Kirchbrücke Zermatt", "category": "写真スポット", "note": "村の中からマッターホルンが見える。朝焼けで山頂が赤く染まる時間がおすすめ"},
-    {"name_ja": "ヒンタードルフ旧市街", "name_en": "Hinterdorf Zermatt", "category": "街歩き", "note": "雪をかぶった古い木造倉庫が並ぶ路地。夜の散歩も雰囲気がいい"},
-    {"name_ja": "マッターホルン博物館", "name_en": "Matterhorn Museum Zermatlantis", "category": "博物館", "note": "初登頂の歴史がわかる。山が雲に隠れた日の予定に"},
-    {"name_ja": "シェ・ヴロニー", "name_en": "Chez Vrony", "category": "食事", "note": "標高約2,100mの山小屋レストラン。マッターホルンを見ながらランチ。冬は営業日を確認し、要予約"},
-    {"name_ja": "ウィンパー・シュトゥーベ", "name_en": "Whymper-Stube", "category": "食事（フォンデュ）", "note": "村の中心にある老舗。チーズフォンデュとラクレットのディナーに。要予約"},
-    {"name_ja": "バーンホフ通り", "name_en": "Bahnhofstrasse Zermatt", "category": "食べ歩き・買い物", "note": "チョコレートやお土産、カフェを回れるメインストリート"}
+    {
+      "name_ja": "ゴルナーグラート",
+      "name_en": "Gornergrat",
+      "category": "展望台",
+      "note": "登山鉄道で約33分。冬の往復 CHF 102。朝いちばんの快晴を狙う",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "マッターホルン・グレッシャー・パラダイス",
+      "name_en": "Matterhorn Glacier Paradise",
+      "category": "展望台",
+      "note": "ヨーロッパ最高所のロープウェイ駅（3,883m）。冬は防寒と高山病に注意。グレッシャー・パレスの休館日を事前に確認",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "リッフェルゼー",
+      "name_en": "Riffelsee",
+      "category": "自然・雪景色",
+      "note": "2月は湖が凍って雪に覆われ、逆さマッターホルンは見られない。ローテンボーデン駅から冬のハイキング道を歩く",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "スネガ / ライゼー",
+      "name_en": "Sunnegga Paradise",
+      "category": "展望台",
+      "note": "地下ケーブルカーで約5分。ここからシェ・ヴロニーへ向かえる",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "キルヒ橋",
+      "name_en": "Kirchbrücke Zermatt",
+      "category": "写真スポット",
+      "note": "村の中からマッターホルンが見える。朝焼けで山頂が赤く染まる時間がおすすめ",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "ヒンタードルフ旧市街",
+      "name_en": "Hinterdorf Zermatt",
+      "category": "街歩き",
+      "note": "雪をかぶった古い木造倉庫が並ぶ路地。夜の散歩も雰囲気がいい",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "マッターホルン博物館",
+      "name_en": "Matterhorn Museum Zermatlantis",
+      "category": "博物館",
+      "note": "初登頂の歴史がわかる。山が雲に隠れた日の予定に",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "シェ・ヴロニー",
+      "name_en": "Chez Vrony",
+      "category": "食事",
+      "note": "標高約2,100mの山小屋レストラン。マッターホルンを見ながらランチ。冬は営業日を確認し、要予約",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "ウィンパー・シュトゥーベ",
+      "name_en": "Whymper-Stube",
+      "category": "食事（フォンデュ）",
+      "note": "村の中心にある老舗。チーズフォンデュとラクレットのディナーに。要予約",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "バーンホフ通り",
+      "name_en": "Bahnhofstrasse Zermatt",
+      "category": "食べ歩き・買い物",
+      "note": "チョコレートやお土産、カフェを回れるメインストリート",
+      "destination": "Zermatt, Switzerland"
+    },
+    {
+      "name_ja": "ニーダードルフ旧市街",
+      "name_en": "Niederdorf",
+      "category": "街歩き",
+      "note": "石畳の路地に小さな店と酒場が並ぶ。夜の散歩にも",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "グロスミュンスター",
+      "name_en": "Grossmünster",
+      "category": "教会・展望",
+      "note": "カール塔（187段）から街と湖を一望。2025〜2029年は改修中で立ち入れない場所あり",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "フラウミュンスター",
+      "name_en": "Fraumünster",
+      "category": "教会・アート",
+      "note": "シャガールの5枚のステンドグラス。入場は有料の場合あり",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "リンデンホフ",
+      "name_en": "Lindenhof",
+      "category": "展望・無料",
+      "note": "旧市街の高台の公園。リマト川と旧市街の屋根を一望",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "バーンホフ通り",
+      "name_en": "Bahnhofstrasse Zürich",
+      "category": "買い物",
+      "note": "中央駅からパラデプラッツまで歩けるショッピング通り",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "シュプリュングリ本店",
+      "name_en": "Confiserie Sprüngli Paradeplatz",
+      "category": "食べ歩き・スイーツ",
+      "note": "名物の一口焼き菓子ルクセンブルゲルリ。お土産にも",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "リンツ・ホーム・オブ・チョコレート",
+      "name_en": "Lindt Home of Chocolate",
+      "category": "体験・スイーツ",
+      "note": "毎日10〜19時。博物館ツアーは時間指定なので予約がおすすめ。噴水とショップは無料",
+      "destination": "Kilchberg, Switzerland"
+    },
+    {
+      "name_ja": "チューリッヒ美術館",
+      "name_en": "Kunsthaus Zürich",
+      "category": "美術館",
+      "note": "木曜は20時まで。月曜は休館の可能性があるので要確認",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "ツォイクハウスケラー",
+      "name_en": "Zeughauskeller",
+      "category": "夕食",
+      "note": "昔の武器庫を使ったスイス郷土料理の店。予約なしで入れる",
+      "destination": "Zürich, Switzerland"
+    },
+    {
+      "name_ja": "ユートリベルク",
+      "name_en": "Uetliberg",
+      "category": "展望",
+      "note": "中央駅から電車で約20分、標高869m。晴れればアルプスまで見える",
+      "destination": "Zürich, Switzerland"
+    }
   ]
 }

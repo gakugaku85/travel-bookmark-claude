@@ -1,4 +1,4 @@
-<title>ツェルマット冬の2日間</title>
+<title>ツェルマットとチューリッヒ</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -74,11 +74,11 @@ footer a { color: inherit; }
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">Zermatt · 1,608 m · Feb</div>
-    <h1>ツェルマット冬の2日間</h1>
-    <p class="lead">マッターホルンのふもとで、2つの展望台・雪の村歩き・フォンデュを回る詰め込みプラン。各スポットの「地図」ボタンを押すと Google マップが開きます。</p>
+    <div class="eyebrow">Zermatt 1,608 m → Zürich 408 m · Feb</div>
+    <h1>ツェルマットとチューリッヒ</h1>
+    <p class="lead">マッターホルンのふもとで2つの展望台と雪の村歩き、帰国前にチューリッヒの旧市街とチョコレートを回る詰め込みプラン。各スポットの「地図で開く」ボタンを押すと Google マップが開きます。</p>
     <ul class="meta">
-      <li>2月中旬</li><li>カップル</li><li>定番観光＋食べ歩き</li><li>2泊以下</li><li>10スポット</li>
+      <li>2月中旬</li><li>カップル</li><li>定番観光＋食べ歩き</li><li>ツェルマット2泊 → チューリッヒ1泊</li><li>20スポット</li>
     </ul>
   </header>
 
@@ -92,6 +92,9 @@ footer a { color: inherit; }
       <li>グレッシャー・パラダイスは3,883m。防寒具を持ち、急に動き回らないこと。グレッシャー・パレスなど施設ごとの休館日は公式サイトで確認</li>
       <li>リッフェルゼーは2月は凍結・積雪。逆さマッターホルンは見られませんが、ローテンボーデンからの冬のハイキング道で雪原を歩けます</li>
       <li>シェ・ヴロニーとウィンパー・シュトゥーベは予約がおすすめ。シェ・ヴロニーは冬の営業日と、スキーをしない人の行き方を予約時に確認</li>
+      <li><b>チューリッヒの曜日を確認。</b>チューリッヒ美術館は月曜休館の可能性あり。木曜は20時まで開いている</li>
+      <li>リンツ・ホーム・オブ・チョコレートは毎日10〜19時。ツアーは時間指定制。チョコレートの噴水とショップはチケットなしで入れる</li>
+      <li>少し贅沢な夕食にするなら、シャガールやミロの絵が飾られた老舗クローネンハレ（Kronenhalle、要予約）も候補</li>
     </ul>
   </aside>
 
@@ -105,7 +108,7 @@ footer a { color: inherit; }
     </ol>
   </section>
 
-  <footer>標高は概算です。運行情報は <a href="https://www.gornergrat.ch/en/pages/timetable-prices" target="_blank" rel="noopener">gornergrat.ch</a>・<a href="https://www.matterhornparadise.ch/en/information/lifts-and-pistes" target="_blank" rel="noopener">matterhornparadise.ch</a> で最新を確認してください。</footer>
+  <footer>標高は概算です。時刻はモデルプランなので、運行・営業情報は <a href="https://www.gornergrat.ch/en/pages/timetable-prices" target="_blank" rel="noopener">gornergrat.ch</a>・<a href="https://www.matterhornparadise.ch/en/information/lifts-and-pistes" target="_blank" rel="noopener">matterhornparadise.ch</a>・<a href="https://www.lindt-home-of-chocolate.com/en/lindt-home-of-chocolate-opening-times/" target="_blank" rel="noopener">lindt-home-of-chocolate.com</a>・<a href="https://www.zuerich.com/en" target="_blank" rel="noopener">zuerich.com</a> で最新を確認してください。</footer>
 </div>
 
 <script>
@@ -135,6 +138,30 @@ const days = [
       note: "村へ戻り、地下ケーブルカーで約5分。ここからランチへ向かう。" },
     { t: "12:45", ja: "シェ・ヴロニー", en: "Chez Vrony", cat: "昼食", alt: 2130, meal: true, map: q("Chez Vrony Zermatt Switzerland"),
       note: "フィンデルン集落にある山小屋レストラン。テラスからマッターホルンを正面に見ながらランチ。" }
+  ]},
+  { title: "3日目", sub: "朝の列車でチューリッヒへ（約3時間）、午後は旧市街", stops: [
+    { t: "14:00", ja: "リンデンホフ", en: "Lindenhof", cat: "展望・無料", alt: 428, map: q("Lindenhof Zürich Switzerland"),
+      note: "中央駅から歩いて約10分の高台の公園。リマト川と旧市街の屋根を一望。" },
+    { t: "14:30", ja: "フラウミュンスター", en: "Fraumünster", cat: "教会・アート", alt: 408, map: q("Fraumünster Zürich Switzerland"),
+      note: "シャガールが1967年に手がけた5枚のステンドグラス。入場は有料の場合あり。" },
+    { t: "15:15", ja: "バーンホフ通り", en: "Bahnhofstrasse", cat: "買い物", alt: 408, map: q("Bahnhofstrasse Zürich Switzerland"),
+      note: "パラデプラッツまで、時計やチョコレートの店を見ながら歩く。" },
+    { t: "16:00", ja: "シュプリュングリ本店", en: "Confiserie Sprüngli Paradeplatz", cat: "スイーツ", alt: 408, meal: true, map: q("Confiserie Sprüngli Paradeplatz Zürich Switzerland"),
+      note: "名物の一口焼き菓子ルクセンブルゲルリでお茶の時間。お土産にも。" },
+    { t: "17:00", ja: "グロスミュンスター", en: "Grossmünster", cat: "教会・展望", alt: 408, map: q("Grossmünster Zürich Switzerland"),
+      note: "カール塔の187段を登り、夕暮れの街と湖を見下ろす。2025〜2029年は改修中。" },
+    { t: "18:00", ja: "ニーダードルフ旧市街", en: "Niederdorf", cat: "街歩き", alt: 410, map: q("Niederdorf Zürich Switzerland"),
+      note: "石畳の路地に小さな店と酒場が並ぶ。夕食前の散歩に。" },
+    { t: "19:30", ja: "ツォイクハウスケラー", en: "Zeughauskeller", cat: "夕食", alt: 408, meal: true, map: q("Zeughauskeller Zürich Switzerland"),
+      note: "昔の武器庫を使った郷土料理の店。予約なしで入れる。名物はチューリッヒ風の仔牛のクリーム煮。" }
+  ]},
+  { title: "4日目", sub: "帰国日。フライトの時刻に合わせて削る", stops: [
+    { t: "09:00", ja: "ユートリベルク", en: "Uetliberg", cat: "展望", alt: 869, map: q("Uetliberg Zürich Switzerland"),
+      note: "中央駅から電車で約20分。晴れればチューリッヒ湖の向こうにアルプスまで見える。" },
+    { t: "11:30", ja: "リンツ・ホーム・オブ・チョコレート", en: "Lindt Home of Chocolate", cat: "体験・スイーツ", alt: 420, meal: true, map: q("Lindt Home of Chocolate Kilchberg Switzerland"),
+      note: "キルヒベルクにある、高さ9mのチョコレートの噴水と博物館。ツアーは時間指定なので予約を。" },
+    { t: "14:30", ja: "チューリッヒ美術館", en: "Kunsthaus Zürich", cat: "美術館", alt: 410, map: q("Kunsthaus Zürich Switzerland"),
+      note: "時間が余れば。モネやジャコメッティのコレクション。空港へは中央駅から電車で約10分。" }
   ]}
 ];
 const root = document.getElementById("days");

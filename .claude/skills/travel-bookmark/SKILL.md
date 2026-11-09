@@ -48,6 +48,8 @@ argument-hint: <目的地> [リスト名]
 
 （例: `.claude/skills/travel-bookmark/examples/paris.json`）
 
+複数の都市を回る旅では、スポットごとに `"destination": "Zurich, Switzerland"` のように都市を指定する（トップレベルの `destination` より優先される）。既存のリストに都市を足すときは同じ `input.json` に追記して作り直す。
+
 ## 4. Google マップ用ファイルを生成
 
 ```bash

@@ -14,7 +14,8 @@ Input JSON schema:
           "name_en": "Eiffel Tower",
           "category": "展望台",
           "note": "夜のライトアップが◎",
-          "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris"   # optional
+          "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris",   # optional
+          "destination": "Paris, France"   # optional: overrides the trip destination (multi-city trips)
         }
       ]
     }
@@ -69,7 +70,7 @@ def maps_url(spot: dict, destination: str) -> str:
     """Universal Google Maps URL (works on web, iOS, Android)."""
     if spot.get("maps_url"):
         return spot["maps_url"]
-    query = spot.get("address") or with_destination(spot.get("name_en") or spot.get("name_ja"), destination)
+    query = spot.get("address") or with_destination(spot.get("name_en") or spot.get("name_ja"), spot.get("destination") or destination)
     params = {"api": "1", "query": query}
     if spot.get("place_id"):
         params["query_place_id"] = spot["place_id"]
@@ -77,7 +78,7 @@ def maps_url(spot: dict, destination: str) -> str:
 
 
 def resolve_spot(spot: dict, destination: str, api_key: str) -> None:
-    query = with_destination(spot.get("name_en") or spot.get("name_ja"), destination)
+    query = with_destination(spot.get("name_en") or spot.get("name_ja"), spot.get("destination") or destination)
     body = json.dumps({"textQuery": query, "languageCode": "ja", "pageSize": 1}).encode()
     req = urllib.request.Request(
         PLACES_URL,
@@ -109,7 +110,7 @@ def write_csv(path: Path, spots: list[dict], destination: str) -> None:
         w = csv.writer(f)
         w.writerow(["Name", "Name (EN)", "Category", "Note", "Address", "Latitude", "Longitude", "Google Maps"])
         for s in spots:
-            address = s.get("address") or with_destination(s.get("name_en") or s.get("name_ja"), destination, ", ")
+            address = s.get("address") or with_destination(s.get("name_en") or s.get("name_ja"), s.get("destination") or destination, ", ")
             w.writerow([
                 s.get("name_ja") or s.get("name_en"),
                 s.get("name_en", ""),
